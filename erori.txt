@@ -1,0 +1,3 @@
+#6V971X35 -> exista multiple conturi cu acelasi email in baza de date
+#D62MQ7   -> exista multiple filme setate ca fiind in premiera in saptamana respectiva
+#3N89U41  -> eroare la procesarea email-ului (email-ul nu are forma specifica) in pagina de resetare
