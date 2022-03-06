@@ -20,8 +20,8 @@ function criptare($action, $string) {
 	
     $output = false;
     $encrypt_method = "AES-256-CBC";
-    $secret_key = 'owmda';
-    $secret_iv = 'solo2001';
+    $secret_key = 'secret_key';
+    $secret_iv = 'secret_iv';
     // hash
     $key = hash('sha256', $secret_key);
     
@@ -48,16 +48,16 @@ function numarare($con, $tabel, $conditie){
 	
 function trimite_mail($destinatar, $subiect, $mesaj)
 {
-	ini_set("include_path", '/home/cinemame/php:' . ini_get("include_path") );
+	ini_set("include_path", '/home/cinema/php:' . ini_get("include_path") );
 	require_once "Mail.php";
 	$from = "Cinema Melodia <no-reply@cinema-melodia.ro>";
 	$to = "Nume <$destinatar>";
 	$subject = "$subiect";
 	$body = "$mesaj";               
 	 
-	$host = "gaia.hosterion.net";
-	$username = "no-reply@cinema-melodia.ro";
-	$password = "7}=q.D6Ng0ik";  
+	$host = "www.example.com";
+	$username = "email@exame.com";
+	$password = "password123";  
 	                        
 	 
 	$headers = array ('From' => $from,
